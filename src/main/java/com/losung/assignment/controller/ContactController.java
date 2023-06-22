@@ -48,4 +48,22 @@ public class ContactController {
         return contactService.getAllContactDetails();
     }
 
+    @GetMapping("/searchFirstName")
+    @ApiOperation("get contact's by first name")
+    public ResponseEntity<ContactResponse> getAllContactDetailsByFirstName(@RequestParam String firstName) {
+        return contactService.getAllContactDetailsByFirstName(firstName);
+    }
+
+    @GetMapping("/searchLastName")
+    @ApiOperation("get contact's by last name")
+    public ResponseEntity<ContactResponse> getAllContactDetailsByLastName(@RequestParam String lastName) {
+        return contactService.getAllContactDetailsByLastName(lastName);
+    }
+
+    @GetMapping("/searchEmail")
+    @ApiOperation("get contact's by email")
+    public ResponseEntity<ContactResponse> getAllContactDetailsByEmail(@RequestParam String email) {
+        return contactService.getAllContactDetailsByEmail(email);
+    }
+
 }

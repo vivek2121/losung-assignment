@@ -11,4 +11,8 @@ public interface ContactService {
     ResponseEntity<ContactResponse>deleteContactDetails(Integer contactId);
     ResponseEntity<ContactResponse>updateContactDetails(Integer contactId,ContactRequest contactRequest);
     ResponseEntity<ContactResponse>getAllContactDetails();
+    ResponseEntity<ContactResponse>getAllContactDetailsByFirstName(String firstName);
+    ResponseEntity<ContactResponse>getAllContactDetailsByLastName(String lastName);
+    ResponseEntity<ContactResponse>getAllContactDetailsByEmail(String email);
+
 }

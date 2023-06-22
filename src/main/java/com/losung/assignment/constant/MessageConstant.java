@@ -1,4 +1,4 @@
-package com.losung.assignment.Constant;
+package com.losung.assignment.constant;
 
 public class MessageConstant {
     public static final String STATUS_200 = "200";
